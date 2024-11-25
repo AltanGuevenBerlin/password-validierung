@@ -32,6 +32,16 @@ public class Main {
         return password.length ()  >= 8;
     }
 
+
+    public static boolean checkingIfSpecial(String password) {
+        if (password.contains( "")) {
+            return true;
+    } else {
+            System.out.println(" Password doesn't contain special characters");
+            return false;
+        }
+}
+
     // prüfe ob String ist
     // min. Länge von 8 Zeichen
     // muss Ziffern enthalten

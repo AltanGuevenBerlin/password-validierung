@@ -24,14 +24,22 @@ public class MainTest {
     }
   @Test
     void checkLength_expectTrue_whenLength() {
-        //Given
-      String password ="Altan12?";
-        //WHEN
-      boolean checkLetters = Main.checkingIfLength( password );
+        // Given
+         String password ="Altan12?";
+        // WHEN
+        boolean checkLength = Main.checkingIfLength( password );
+        // THEN
+         Assertions.assertTrue(checkLength);
 
     }
+    @Test
     void checkSpecialCharackters() {
-
+        // GIVEN
+        String password = "Altan1?!";
+        // WHEN
+        boolean checkSpecial = Main.checkingIfSpecial ( password);
+        // THEN
+        Assertions.assertTrue(checkSpecial);
     }
 
     void yieldOK_when_FirstLine_Is_Digit_Letter_SpecialCharacter() {
