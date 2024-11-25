@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class MainTest {
     @Test
-    void Letters() {
+    void checkLetters_expectTrue_whenLetters() {
         //Given
         String password = "Altan";
         //WHEN
@@ -14,7 +14,7 @@ public class MainTest {
         Assertions.assertTrue(checkLetters);
     }
     @Test
-    void  Digits() {
+    void  checkDigits_expectTrue_whenDigits() {
         //GIVEN
     String password = "152368";
         // WHEN
@@ -22,10 +22,12 @@ public class MainTest {
         // THEN
         Assertions.assertTrue(checkDigits);
     }
-    void checkUpperCase() {
-
-    }
-    void length() {
+  @Test
+    void checkLength_expectTrue_whenLength() {
+        //Given
+      String password ="Altan12?";
+        //WHEN
+      boolean checkLetters = Main.checkingIfLength( password );
 
     }
     void checkSpecialCharackters() {

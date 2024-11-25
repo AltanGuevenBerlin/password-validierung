@@ -28,6 +28,10 @@ public class Main {
         }
     }
 
+    public static boolean checkingIfLength(String password) {
+        return password.length ()  >= 8;
+    }
+
     // prüfe ob String ist
     // min. Länge von 8 Zeichen
     // muss Ziffern enthalten
